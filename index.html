@@ -1,0 +1,16 @@
+---
+    layout: layout.html
+    title: Among Us
+---
+Willkommen auf dieser Homepage!!
+
+{% for post in collections.post %}
+<div class="blog-container">
+    <div class="blog-box">
+        <a href=" {{ post.url }}">
+            <h2>{{ post.data.title }}</h2>
+            <p>{{ post.content }}</p>
+        </a>
+    </div>
+</div>
+{% endfor %}
