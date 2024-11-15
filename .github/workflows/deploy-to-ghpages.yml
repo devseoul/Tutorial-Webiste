@@ -33,7 +33,11 @@ jobs:
           path: ./.cache
           key: ${{ runner.os }}-eleventy-fetch-cache
 
-      - run: npm install
+      - run:
+          git config --global user.email "lukas.diekmann@smail.th-koeln.de"
+          git config --global user.name "devseoul"
+          npm install
+
       - run: npm run build-ghpages
 
       - name: Deploy
