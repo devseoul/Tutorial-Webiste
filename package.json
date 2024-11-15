@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "deploy": "gh-pages -d _site",
+    "deploy": "gh-pages -d _site --delete",
     "build-ghpages": "npm run build && npm run deploy"
   },
   "keywords": [],
