@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy --pathprefix 'Tutorial-Webiste'",
-    "deploy": "gh-pages -d _site --add",
-    "build-ghpages": "npm run build && npm run deploy"
+    "deploy": "gh-pages -d _site --add"
   },
   "keywords": [],
   "type": "module",
