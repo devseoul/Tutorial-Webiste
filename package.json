@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy --pathprefix 'Tutorial-Webiste'",
-    "deploy": "gh-pages -d _site --add"
+    "deploy": "gh-pages -d _site -r \"https://x-access-token:DEPLOYKEY_11TY@github.com/devseoul/Tutorial-Webiste.git\" --add"
   },
   "keywords": [],
   "type": "module",

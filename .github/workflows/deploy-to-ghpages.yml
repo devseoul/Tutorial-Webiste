@@ -33,6 +33,11 @@ jobs:
           path: ./.cache
           key: ${{ runner.os }}-eleventy-fetch-cache
 
+      - name: Clean previous gh-pages config
+        run: |
+          rm -rf .git/refs/remotes/origin/gh-pages
+          rm -rf .git/refs/remotes/origin/main
+
       - name: Set Git Useremail
         run: git config --global user.email "lukas.diekmann@smail.th-koeln.de"
 
@@ -43,7 +48,6 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.DEPLOYKEY_11TY }}
           publish_dir: ./_site
