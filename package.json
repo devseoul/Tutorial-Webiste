@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "deploy": "gh-pages -d build",
-    "build-ghpages": "command-to-build-ghpages"
+    "build": "npx @11ty/eleventy",
+    "deploy": "gh-pages -d _site",
+    "build-ghpages": "npm run build && npm run deploy"
   },
   "keywords": [],
   "type": "module",
