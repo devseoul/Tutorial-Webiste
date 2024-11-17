@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy --pathprefix 'Tutorial-Webiste'",
+    "build": "npx @11ty/eleventy --pathprefix '/Tutorial-Webiste/'",
     "deploy": "gh-pages -d _site -r \"https://x-access-token:DAKEY@github.com/devseoul/Tutorial-Webiste.git\" --add"
   },
   "keywords": [],
